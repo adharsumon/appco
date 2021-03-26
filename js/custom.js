@@ -1,7 +1,7 @@
 $(function () {
 	// PRELOADER JS HERE
 	$(window).load(function () {
-		$('.preloader').delay(3000).fadeOut();
+		$('.preloader').delay(2500).fadeOut();
 	});
 
 	// STICKY MENU

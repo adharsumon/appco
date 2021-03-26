@@ -103,20 +103,15 @@ a:hover {
 /*=============================
     01. HEADER PART CSS
 ==============================*/
-.header_part {}
 
 .navbar {
     padding: 0;
     background: #F4FEFF;
 }
 
-.navbar-brand {}
-
 .navbar-brand img {
     height: 45px !important;
 }
-
-.navbar-nav {}
 
 .navbar-nav li {
     margin: 0 5px;
@@ -187,10 +182,6 @@ a:hover {
     background: #F4FEFF;
 }
 
-.banner_left {}
-
-.banner_text {}
-
 .banner_text span {
     text-transform: uppercase;
     color: var(--pColor);
@@ -211,8 +202,6 @@ a:hover {
     width: 85%;
     margin-bottom: 30px;
 }
-
-.banner_btn {}
 
 .banner_btn a.d_btn {
     background: #f9218d;
@@ -255,8 +244,6 @@ a:hover {
 
 }
 
-.banner_btn a.p_btn {}
-
 .banner_btn a.p_btn .fa {
     background: #D852E8;
     color: #fff;
@@ -284,8 +271,6 @@ a:hover {
     left: 0;
     width: 35%;
 }
-
-.features_right {}
 
 .features_right h2 {
     font-size: 50px;
@@ -327,8 +312,6 @@ a:hover {
     text-align: center;
     border-radius: 50%;
 }
-
-.single_features .features_text {}
 
 .single_features .features_text h6 {
     color: #23182c;
@@ -415,8 +398,6 @@ a:hover {
 .service_icon.active::before {
     right: 45px !important;
 }
-
-.service_text {}
 
 .service_text h4 {
     font-size: 24px;
@@ -642,8 +623,6 @@ a:hover {
 /*=============================
     08. OUR CUSTOMERS PART CSS
 ==============================*/
-.customers_part {}
-
 .customers_title {
     text-align: center;
 }
@@ -677,10 +656,6 @@ a:hover {
     opacity: .9;
     background: rgba(255, 255, 255, 0.055);
 }
-
-.s_c_image {}
-
-.s_c_image img {}
 
 .single_customer h6 {
     font-size: 20px;
@@ -723,14 +698,10 @@ a:hover {
 /*=============================
     09. AVAILABLE APPS PART CSS
 ==============================*/
-.available_apps {}
-
 .a_a_overlay {
     background-image: -webkit-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
     position: relative;
 }
-
-.apps_heartbeat {}
 
 .apps_heartbeat img {
     animation: heartbeat 2s infinite alternate;
@@ -758,15 +729,11 @@ a:hover {
     }
 }
 
-.apps_bottom_shape {}
-
 .apps_bottom_shape img {
     position: absolute;
     bottom: 0;
     left: 0;
 }
-
-.appls_left {}
 
 .appls_left h3 {
     font-size: 50px;
@@ -794,8 +761,6 @@ a:hover {
     align-items: center;
 }
 
-
-
 /*=============================
     10. SAY HELLO PART CSS
 ==============================*/
@@ -805,19 +770,11 @@ a:hover {
     overflow: hidden;
 }
 
-.say_hello_left {}
-
 .say_hello_left h3 {
     font-size: 50px;
     color: #282828;
     font-weight: 600;
 }
-
-.say_hello_right {
-    /* background: url(../images/say_shape_right.png) !important; */
-}
-
-.say_hello_right .price_btn {}
 
 .say_hello_right .price_btn a {
     background: #F9218D;
@@ -858,8 +815,6 @@ a:hover {
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
-.say_shape {}
-
 .say_shape .shape_roate {
     position: absolute;
     top: 62%;
@@ -883,12 +838,6 @@ a:hover {
 /*=============================
     11. FOOTER  PART CSS
 ==============================*/
-.footer_part {}
-
-.footer_image_part {}
-
-.footer_image_part a {}
-
 .footer_image_part a .footer_logo {
     height: 45px !important;
     margin-bottom: 30px;
@@ -911,10 +860,6 @@ a:hover {
     font-weight: 700;
     margin-bottom: 60px;
 }
-
-.footer_menu ul {}
-
-.footer_menu ul li {}
 
 .footer_menu ul li a {
     margin-bottom: 25px;
