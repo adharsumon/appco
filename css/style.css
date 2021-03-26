@@ -1,0 +1,1029 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    /* text-transform: uppercase; */
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+:root {
+    --pColor: #2b044d;
+}
+
+/*ALL SECTION TITLE HERE*/
+
+
+/* theme_btnn CSS HERE */
+
+
+/******************* END OF COMMON CSS *******************/
+.preloader {
+    position: fixed;
+    z-index: 9999999999999;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.loader_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+/*=============================
+    01. HEADER PART CSS
+==============================*/
+.header_part {}
+
+.navbar {
+    padding: 0;
+    background: #F4FEFF;
+}
+
+.navbar-brand {}
+
+.navbar-brand img {
+    height: 45px !important;
+}
+
+.navbar-nav {}
+
+.navbar-nav li {
+    margin: 0 5px;
+}
+
+.navbar-nav li a {
+    color: #450b78;
+    text-transform: capitalize;
+    padding: 39px 16px;
+    position: relative;
+}
+
+.navbar-nav li a::before {
+    content: '';
+    position: absolute;
+    background: #a60dcf;
+    display: block;
+    width: 0;
+    height: 2px;
+    left: 0;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.navbar-nav li>a:hover::before {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-nav li a.active::before {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* STICKY MENU */
+.main_menu.sticky {
+    position: fixed;
+    background: #fff !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999;
+    animation: stickyAni 3s;
+}
+
+@keyframes stickyAni {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/*=============================
+    02. BANNER PART CSS
+==============================*/
+.banner_part {
+    background: #F4FEFF;
+}
+
+.banner_left {}
+
+.banner_text {}
+
+.banner_text span {
+    text-transform: uppercase;
+    color: var(--pColor);
+}
+
+.banner_text h1 {
+    font-size: 65px;
+    color: var(--pColor);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.banner_text p {
+    color: #707b8e;
+    line-height: 2;
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+.banner_btn {}
+
+.banner_btn a.d_btn {
+    background: #f9218d;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.banner_btn a.d_btn::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 225px;
+    -webkit-border-radius: 225px;
+    -moz-border-radius: 225px;
+    -ms-border-radius: 225px;
+    -o-border-radius: 225px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+
+}
+
+.banner_btn a.d_btn:hover::before {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+
+}
+
+.banner_btn a.p_btn {}
+
+.banner_btn a.p_btn .fa {
+    background: #D852E8;
+    color: #fff;
+    /* padding: 20px; */
+    /* border-radius: 50%; */
+    /* font-size: 16px; */
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/*=============================
+    03. FEATURES PART CSS
+==============================*/
+.features_part {
+    position: relative;
+}
+
+.features_left {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 35%;
+}
+
+.features_right {}
+
+.features_right h2 {
+    font-size: 50px;
+    color: var(--pColor);
+    font-weight: 700;
+    text-transform: none;
+    line-height: 1.2;
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+.features_items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.single_features {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.single_features .features_icon {
+    height: 100%;
+    margin-right: 15px;
+}
+
+.single_features .features_icon .fa {
+    font-size: 30px;
+    background-image: -webkit-linear-gradient(90deg, #e78ae9 0%, #926ef8 100%);
+    background-image: -moz-linear-gradient(90deg, #e78ae9 0%, #926ef8 100%);
+    background-image: -ms-linear-gradient(90deg, #e78ae9 0%, #926ef8 100%);
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.single_features .features_text {}
+
+.single_features .features_text h6 {
+    color: #23182c;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.single_features .features_text p {
+    font-size: 16px;
+    color: #707b8e;
+    line-height: 1.6;
+}
+
+/*=============================
+    04. SERVICES PART CSS
+==============================*/
+.services_part {
+    background: #F4FEFF;
+}
+
+.services_title {
+    text-align: center;
+    padding: 0 255px;
+    margin-bottom: 60px;
+}
+
+.services_title h2 {
+    font-size: 50px;
+    color: var(--pColor);
+    font-weight: 700;
+    text-transform: initial;
+}
+
+.single_service {
+    text-align: center;
+    padding: 45px;
+    border: 1px solid transparent;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_service.active {
+    border: 1px solid #b8a2ff !important;
+}
+
+.service_icon {
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.service_icon .fa {
+    background: #E88CEA;
+    font-size: 40px;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+}
+
+.service_icon::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/dot-bg.png) !important;
+    top: -25px;
+    right: 50px;
+    z-index: -1;
+    width: 75px;
+    height: 125px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.service_icon.active::before {
+    right: 45px !important;
+}
+
+.service_text {}
+
+.service_text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--pColor);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.service_text h4.active {
+    color: #835EF8;
+}
+
+.service_text p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #707b8e;
+}
+
+.single_service:hover .service_icon::before {
+    right: 45px;
+}
+
+.service_text h4:hover {
+    color: #835EF8;
+}
+
+.single_service:hover {
+    border: 1px solid #b8a2ff !important;
+}
+
+/*=============================
+    05. APPS SCREN PART CSS
+==============================*/
+.app_scren_part {
+    overflow: hidden;
+}
+
+.app_left {
+    position: relative;
+    left: 30%;
+}
+
+.app_left h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--pColor);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.app_left p {
+    color: #707b8e;
+    line-height: 2;
+    text-align: justify;
+}
+
+.app_slider {
+    position: relative;
+    left: 15%;
+}
+
+.a_s_item {
+    margin-right: 10px;
+}
+
+/*=============================
+    06. PRICING PART CSS
+==============================*/
+.pricing_part {
+    padding-top: 100px;
+    padding-bottom: 470px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing_overlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #f9218d 0%, #6c19f6 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .95;
+}
+
+.pricing_overlay h3 {
+    margin-top: 100px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0 360px;
+}
+
+/*=============================
+    07. SINGLE PRICING PART CSS
+==============================*/
+.price_items {
+    margin-top: -290px;
+}
+
+.single_price {
+    text-align: center;
+    background: #fff;
+    padding: 50px 0;
+    position: relative;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.single_price::before {
+    content: '';
+    background-image: url(../images/card_dot.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 120px;
+    z-index: -1;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.single_price:hover::before {
+    bottom: -20px;
+    right: -20px;
+}
+
+.single_price:hover {
+    box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.5);
+}
+
+.single_price p {
+    font-size: 24px;
+    color: #57667e;
+    margin-bottom: 25px;
+}
+
+.single_price h6 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #6a56a6;
+    display: block;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.single_price h6 span {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.single_price ul {
+    margin-top: 50px;
+}
+
+.single_price ul li {
+    margin-bottom: 16px;
+    color: #717081;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.single_price .price_btn {
+    padding-top: 35px;
+}
+
+.price_btn a {
+    background: #712fda;
+    padding: 20px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.price_btn a::before {
+    content: '';
+    position: absolute;
+    background: #ff374b;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.single_price:hover .price_btn a::before {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    width: 100%;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+/*=============================
+    08. OUR CUSTOMERS PART CSS
+==============================*/
+.customers_part {}
+
+.customers_title {
+    text-align: center;
+}
+
+.customers_title h3 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0 260px;
+    color: var(--pColor);
+    margin-bottom: 80px;
+}
+
+.single_customer {
+    text-align: left;
+    margin: 0 12px;
+    position: relative;
+    padding: 0 35px;
+}
+
+.single_customer::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.692);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slick-slide.slick-current.slick-active .single_customer::before {
+    opacity: .9;
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.s_c_image {}
+
+.s_c_image img {}
+
+.single_customer h6 {
+    font-size: 20px;
+    color: #712fda;
+    padding-right: 70px;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.single_customer p {
+    color: #707b8e;
+    line-height: 1.8;
+}
+
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.slick-dots li button {
+    border: 0;
+    margin: 0 5px;
+    font-size: 0;
+    background: #F9D8E0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background: #EC5252;
+    transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+}
+
+/*=============================
+    09. AVAILABLE APPS PART CSS
+==============================*/
+.available_apps {}
+
+.a_a_overlay {
+    background-image: -webkit-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
+    position: relative;
+}
+
+.apps_heartbeat {}
+
+.apps_heartbeat img {
+    animation: heartbeat 2s infinite alternate;
+    -webkit-animation: heartbeat 2s infinite alternate;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+}
+
+@keyframes heartbeat {
+    30% {
+        transform: scale(2.1);
+        -webkit-transform: scale(2.1);
+        -moz-transform: scale(2.1);
+        -ms-transform: scale(2.1);
+        -o-transform: scale(2.1);
+    }
+
+    70% {
+        transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -o-transform: scale(1.6);
+    }
+}
+
+.apps_bottom_shape {}
+
+.apps_bottom_shape img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.appls_left {}
+
+.appls_left h3 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.appls_left span {
+    color: #fff;
+    padding-right: 120px;
+    line-height: 2;
+}
+
+.a_a_apps_btn {
+    margin-top: 40px;
+}
+
+.a_btn_wrap {
+    display: flex;
+    background: #292E41;
+    /* margin-right: 30px; */
+    /* width: 150px; */
+    align-items: center;
+}
+
+
+
+/*=============================
+    10. SAY HELLO PART CSS
+==============================*/
+.say_hello_part {
+    border-bottom: 1px solid #ffc9fd;
+    position: relative;
+    overflow: hidden;
+}
+
+.say_hello_left {}
+
+.say_hello_left h3 {
+    font-size: 50px;
+    color: #282828;
+    font-weight: 600;
+}
+
+.say_hello_right {
+    /* background: url(../images/say_shape_right.png) !important; */
+}
+
+.say_hello_right .price_btn {}
+
+.say_hello_right .price_btn a {
+    background: #F9218D;
+    position: relative;
+    border-radius: 30px;
+}
+
+.say_hello_right .price_btn a::before {
+    content: '';
+    position: absolute;
+    background: #DA1276;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-border-radius: 30pxpx;
+    -moz-border-radius: 30pxpx;
+    -ms-border-radius: 30pxpx;
+    -o-border-radius: 30pxpx;
+}
+
+.say_hello_right .price_btn a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    width: 100%;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.say_shape {}
+
+.say_shape .shape_roate {
+    position: absolute;
+    top: 62%;
+    left: -100px;
+    animation: spin 50s linear infinite;
+    -webkit-animation: spin 50s linear infinite;
+}
+
+.say_shape .say_right_image {
+    position: absolute;
+    bottom: 0;
+    left: 41%;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/*=============================
+    11. FOOTER  PART CSS
+==============================*/
+.footer_part {}
+
+.footer_image_part {}
+
+.footer_image_part a {}
+
+.footer_image_part a .footer_logo {
+    height: 45px !important;
+    margin-bottom: 30px;
+}
+
+.footer_image_part p {
+    color: #707b8e;
+    line-height: 1.8;
+    padding-right: 30px;
+}
+
+/* FOOTER MENU */
+.footer_menu {
+    overflow: hidden;
+}
+
+.footer_menu h6 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.footer_menu ul {}
+
+.footer_menu ul li {}
+
+.footer_menu ul li a {
+    margin-bottom: 25px;
+    color: #868c98;
+    font-weight: 300;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.footer_menu ul li a:hover {
+    color: #A90ACF;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+
+.footer_menu p {
+    color: #707b8e;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.footer_form {
+    position: relative;
+}
+
+.footer_form input {
+    background: #EEE;
+    color: #000;
+    border: 0;
+    padding: 15px;
+    outline: none;
+    font-size: 12px;
+    width: 100%;
+}
+
+.footer_form input::placeholder {
+    text-transform: capitalize;
+}
+
+.footer_form a .fa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background: #8F1BDC;
+    padding: 15px;
+    color: #fff;
+}
+
+.footer_bottom span {
+    color: #888888;
+}
+
+/*=============================
+    12. BACK TO TOP PART CSS
+==============================*/
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    background-color: #962ADE;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 50px;
+    z-index: 99;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    display: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.back-to-top:hover {
+    color: #fff;
+}
+
+/*=============================
+    13. PART CSS
+==============================*/
+
+/*=============================
+    14. PART CSS
+==============================*/
+
+/*=============================
+    15. PART CSS
+==============================*/
+
+/*=============================
+    16. PART CSS
+==============================*/
+
+/*=============================
+    17. PART CSS
+==============================*/
+
+/*=============================
+    18. PART CSS
+==============================*/
+
+/*=============================
+    19. PART CSS
+==============================*/
