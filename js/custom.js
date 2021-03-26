@@ -20,7 +20,7 @@ $(function () {
 		loop: true,
 		items: 1,
 		autoplay: true,
-		autoplayTimeout: 3000,
+		autoplayTimeout: 2500,
 		responsive: {
 			// breakpoint from 768 up
 			768: {

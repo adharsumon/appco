@@ -161,7 +161,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999999999;
+    z-index: 99999;
     animation: stickyAni 3s;
 }
 
